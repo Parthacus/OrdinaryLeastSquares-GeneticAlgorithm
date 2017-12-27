@@ -129,6 +129,7 @@ def drawScatterGraph(points_array, formula, title):
     f = lambda x: (formula.gradient * x) + formula.intercept
     plt.plot(x, f(x))
     plt.scatter(y_array, x_array)
+    plt.title(title)
     plt.show()
 
 def output(bE, fE, af, generation):

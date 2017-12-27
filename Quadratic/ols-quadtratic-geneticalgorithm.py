@@ -136,6 +136,7 @@ def drawScatterGraph(points_array, formula, title):
     x = numpy.linspace(1, 100, 500)
     plt.scatter(x_array, y_array)
     plt.plot(x, formula.calculateLineY(x))
+    plt.title(title)
     plt.show()
 
 def output(bE, fE, af, generation):
