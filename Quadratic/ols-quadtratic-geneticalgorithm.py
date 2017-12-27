@@ -167,9 +167,9 @@ MAXIMUMCONSTANT  =  +25
 MINIMUMCONSTANT  =  -25
 POPULATIONSIZE   =  +200
 MUTATION_RATE    =  +0.9
-NUM_GENERATIONS  =  +100
+NUM_GENERATIONS  =  +200
 
 points_array = returnPoints()
 population = generateEquations(POPULATIONSIZE, MAXIMUMLINEAR, MINIMUMLINEAR, MAXIMUMQUADRATIC, MINIMUMQUADRATIC, MAXIMUMCONSTANT, MINIMUMCONSTANT)
 bestEquation = evolve(NUM_GENERATIONS, population)
-drawScatterGraph(points_array, bestEquation,  "quadtratic regressional analysis with Genetic Algorithm")
+drawScatterGraph(points_array, bestEquation,  "quadratic regression")
