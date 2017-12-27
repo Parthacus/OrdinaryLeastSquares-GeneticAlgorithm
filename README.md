@@ -178,4 +178,4 @@ All that was different in the new solver was that each equation had 3 different 
 
 With just a mere 100 generations, I was getting results seemingly better than the linear regression:
 
-![](./Quadratic/images/OLSGA.png)
+![](./Quadratic/images/QOLSGA.png)
