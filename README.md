@@ -149,6 +149,8 @@ My main problem with implementing the genetic algorithm is that it isn't very ac
 
 Another problem is that it isn't reliable, you won't get the same result if you run it twice because the genetic algorithm is heavily based on randomisation and probability when choosing off springs and generating the initial population.
 
+# Result of my work
+
 All this work lead to a final satisfying screenshot of my Ordinary Least Squares tool using the genetic algorithm working out a line of best fit for the data points of brain weight vs body weight:
 
 ![](./images/OLSGA.png)
