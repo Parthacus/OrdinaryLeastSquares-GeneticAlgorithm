@@ -133,7 +133,7 @@ def drawScatterGraph(points_array, formula, title):
     for point in points_array:
         x_array.append(point.x)
         y_array.append(point.y)
-    x = numpy.linspace(1, 100, 10)
+    x = numpy.linspace(1, 100, 500)
     plt.scatter(x_array, y_array)
     plt.plot(x, formula.calculateLineY(x))
     plt.show()
@@ -164,9 +164,9 @@ MAXIMUMLINEAR    =  +15
 MINIMUMLINEAR    =  -15
 MAXIMUMCONSTANT  =  +25
 MINIMUMCONSTANT  =  -25
-POPULATIONSIZE   =  +100
+POPULATIONSIZE   =  +200
 MUTATION_RATE    =  +0.9
-NUM_GENERATIONS  =  +200
+NUM_GENERATIONS  =  +100
 
 points_array = returnPoints()
 population = generateEquations(POPULATIONSIZE, MAXIMUMLINEAR, MINIMUMLINEAR, MAXIMUMQUADRATIC, MINIMUMQUADRATIC, MAXIMUMCONSTANT, MINIMUMCONSTANT)
