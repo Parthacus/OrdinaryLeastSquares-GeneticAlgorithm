@@ -5,7 +5,7 @@ Regression using Ordinary Least Squares where the line equation is optimised usi
 Ordinary Least Squares regression aims to find the line of best fit by minimising the vertical distance squared between the data point and the line.
 
 Here is a visual representation of the squares which's area you are attempting to minimise through a line of best fit:
-![](./images/Representation.png)
+![](./Linear/images/Representation.png)
 
 ## Genetic Algorithm
 To apply a genetic algorithm to a problem to find the local optimal, you have to have 3 basic things:
@@ -86,7 +86,7 @@ In the same way, in my problem:
 
 To engineer this process you need a way to select which lines are the best and make them more likely to breed. To do this, you have to have what's called a fitness function, in this particular problem, the fitness function is:
 
-![](./images/FitnessFunction.gif)
+![](./Linear/images/FitnessFunction.gif)
 
 ###### Note: In this function, d is the vertical distance between the data point and the line
 
@@ -153,6 +153,6 @@ Another problem is that it isn't reliable, you won't get the same result if you 
 
 All this work lead to a final satisfying screenshot of my Ordinary Least Squares tool using the genetic algorithm working out a line of best fit for the data points of brain weight vs body weight:
 
-![](./images/OLSGA.png)
+![](./Linear/images/OLSGA.png)
 
 Enjoy!
