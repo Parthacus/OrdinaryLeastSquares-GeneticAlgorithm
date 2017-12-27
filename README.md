@@ -1,6 +1,8 @@
 # OrdinaryLeastSquares-GeneticAlgorithm
 Regression using Ordinary Least Squares where the line equation is optimised using a genetic algorithm
 
+# Linear
+
 ## OLS
 Ordinary Least Squares regression aims to find the line of best fit by minimising the vertical distance squared between the data point and the line.
 
@@ -156,3 +158,24 @@ All this work lead to a final satisfying screenshot of my Ordinary Least Squares
 ![](./Linear/images/OLSGA.png)
 
 Enjoy!
+
+# Quadratic
+
+A quadratic regression solver aims to find the line of best fit in data which follows a quadratic line.
+
+Since genetic algorithms are a general solution and can be changed easily, in essence all I needed to do was change/add variables in the code and I had a functioning quadratic regression solver. The key concepts of the genetic algorithm, variation and selective heredity all stayed the exact same.
+
+```python
+class Equation(object):
+    quadtratic_c = 0
+    linear_c = 0
+    constant = 0
+    fitness = 0
+    nfitness = 0
+```
+
+All that was different in the new solver was that each equation had 3 different variables, the quadratic coefficient, the linear coefficient and the constant, which are more commonly known as A, B and C respectively. Once these 3 were generated, I continued taking averages as before and continued evolving them using the same fitness function.
+
+With just a mere 100 generations, I was getting results seemingly better than the linear regression:
+
+![](./Quadratic/images/OLSGA.png)
